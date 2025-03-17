@@ -9,12 +9,13 @@ let lightbox = new SimpleLightbox('.gallery a', {
 });
 
 export function showLoader() {
-  loader.classList.remove('hidden');
+  document.querySelector('.loader').classList.remove('hidden');
 }
 
 export function hideLoader() {
-  loader.classList.add('hidden');
+  document.querySelector('.loader').classList.add('hidden');
 }
+
 
 export function clearGallery() {
   gallery.innerHTML = '';
